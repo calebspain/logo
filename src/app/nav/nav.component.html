@@ -1,0 +1,36 @@
+<nav>
+
+  <!-- Desktop -->
+  <ul class="desktop-menu">
+    <li class="logo">
+      <a routerLink="/">LOGO</a>
+    </li>
+    <li class="sign-up">
+      <a routerLink="/signup"><i class="fa fa-user" aria-hidden="true"></i> Sign Up</a>
+    </li>
+    <li class="login">
+      <a routerLink="/login"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+    </li>
+  </ul>
+
+  <!-- Mobile -->
+  <ul class="mobile-menu">
+    <div class="display">
+      <li class="hamburger">
+          <i class="fa fa-bars" aria-hidden="true" (click)="toggleMobile()"></i>
+        </li>
+        <li class="logo">
+          <a routerLink="/">LOGO</a>
+        </li>
+    </div>
+    <div class="options" [ngClass]="mobile ? 'active' : 'non-active'">
+      <li class="sign-up">
+        <a routerLink="/signup"><i class="fa fa-user" aria-hidden="true"></i> Sign Up</a>
+      </li>
+      <li class="login">
+        <a routerLink="/login"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+      </li>
+    </div>
+  </ul>
+  
+</nav>
