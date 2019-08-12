@@ -1,8 +1,9 @@
 header
-    display: grid
-    grid-template-columns: repeat(2, 1fr)
-    height: calc(100vh - 65px)
-    padding: 0 40px
+    display: flex
+    justify-content: space-evenly
+    flex-wrap: wrap-reverse
+    height: calc(100vh - 77px)
+    padding: 32px 40px
     div
         display: flex
         flex-direction: column
@@ -21,9 +22,13 @@ header
             text-align: center
             text-transform: capitalize
             line-height: 1
+        img 
+            width: 100%
+            height: auto
         div
             display: flex
             flex-direction: row
+            flex-wrap: wrap
             margin-top: 26px
             button
                 margin: 0 20px
@@ -41,3 +46,35 @@ header
                 color: royalblue
                 background: #fff
                 border: 2px solid royalblue
+
+
+@media only screen and (max-width: 1245px)
+    header
+        height: 100%
+
+
+@media only screen and (max-width: 900px)
+    header
+        div
+            h1 
+                font-size: 3.2rem
+            h2 
+                font-size: 1.2rem
+            div
+                margin-top: 20px
+                button
+                    padding: 20px 40px
+
+
+@media only screen and (max-width: 600px)
+    header
+        div
+            h1 
+                font-size: 2.4rem
+            h2 
+                font-size: 1.1rem
+            div
+                margin-top: 20px
+                button
+                    width: 100%
+                    margin: 10px 0

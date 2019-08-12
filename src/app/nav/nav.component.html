@@ -20,15 +20,15 @@
           <i class="fa fa-bars" aria-hidden="true" (click)="toggleMobile()"></i>
         </li>
         <li class="logo">
-          <a routerLink="/">LOGO</a>
+          <a routerLink="/" (click)="closeMobile()">LOGO</a>
         </li>
     </div>
     <div class="options" [ngClass]="mobile ? 'active' : 'non-active'">
       <li class="sign-up">
-        <a routerLink="/signup"><i class="fa fa-user" aria-hidden="true"></i> Sign Up</a>
+        <a routerLink="/signup" (click)="closeMobile()"><i class="fa fa-user" aria-hidden="true"></i> Sign Up</a>
       </li>
       <li class="login">
-        <a routerLink="/login"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+        <a routerLink="/login" (click)="closeMobile()"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
       </li>
     </div>
   </ul>

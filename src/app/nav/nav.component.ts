@@ -18,4 +18,8 @@ export class NavComponent implements OnInit {
     this.mobile = !this.mobile;
   }
 
+  closeMobile() {
+    this.mobile = false;
+  }
+
 }
